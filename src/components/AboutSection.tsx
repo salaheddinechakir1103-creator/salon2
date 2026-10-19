@@ -1,3 +1,4 @@
+import fixedImage0 from '../assets/images/luminous_salon_station_1792400241745.jpg';
 import React from 'react';
 import { Sparkles, ShieldCheck, HeartHandshake } from 'lucide-react';
 import { TRANSLATIONS, Language } from '../data/translations';
@@ -17,7 +18,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ currentLang = 'fr' }
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#B89058]/35 shadow-lg">
               <img
-                src="/src/assets/images/luminous_salon_station_1792400241745.jpg"
+                src={fixedImage0}
                 alt="Architecture lumineuse de Maison Éclat Casablanca"
                 referrerPolicy="no-referrer"
                 className="w-full h-[280px] sm:h-[420px] lg:h-[520px] object-cover object-center"
