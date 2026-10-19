@@ -1,3 +1,4 @@
+import fixedImage0 from '../assets/images/salon_bridal_couture_1792365278992.jpg';
 import React from 'react';
 import { Crown, Check, ArrowRight, MessageSquare } from 'lucide-react';
 import { sounds } from '../utils/soundEffects';
@@ -32,7 +33,7 @@ export const BridalRoyalSection: React.FC<BridalRoyalSectionProps> = ({
           <div className="lg:col-span-6 relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden border border-[#B89058]/40 shadow-lg group">
               <img
-                src="/src/assets/images/salon_bridal_couture_1792365278992.jpg"
+                src={fixedImage0}
                 alt="Mariée marocaine haute couture chez Maison Éclat"
                 referrerPolicy="no-referrer"
                 className="w-full h-[320px] sm:h-[440px] lg:h-[540px] object-cover object-center group-hover:scale-102 transition-transform duration-700"
