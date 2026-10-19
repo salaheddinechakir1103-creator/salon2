@@ -1,3 +1,5 @@
+import fixedImage0 from '../assets/images/luminous_bridal_hair_1792400243018.jpg';
+import fixedImage1 from '../assets/images/salon_transformation_gloss_1792365279344.jpg';
 import React, { useState, useRef } from 'react';
 import { Sparkles, SlidersHorizontal, ArrowRight } from 'lucide-react';
 import { TRANSLATIONS, Language } from '../data/translations';
@@ -101,7 +103,7 @@ export const TransformationSection: React.FC<TransformationSectionProps> = ({
             >
               {/* Image 1 (Full base) */}
               <img
-                src="/src/assets/images/luminous_bridal_hair_1792400243018.jpg"
+                src={fixedImage0}
                 alt="Coiffure en salon lumineux"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover object-center"
@@ -114,7 +116,7 @@ export const TransformationSection: React.FC<TransformationSectionProps> = ({
                 style={{ width: `${sliderPosition}%` }}
               >
                 <img
-                  src="/src/assets/images/salon_transformation_gloss_1792365279344.jpg"
+                  src={fixedImage1}
                   alt="Zoom macro brillance et glaçage gloss"
                   referrerPolicy="no-referrer"
                   className="absolute top-0 bottom-0 left-0 h-full object-cover object-left max-w-none"
