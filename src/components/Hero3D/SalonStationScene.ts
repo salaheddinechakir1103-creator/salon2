@@ -97,6 +97,8 @@ export class SalonStationScene {
     this.buildContactShadow();
 
     this.stationGroup.add(this.chairGroup);
+    // Attach the completed salon station to the rendered scene.
+    this.scene.add(this.stationGroup);
     const isPortrait = width < 640 || width < height;
     if (isPortrait) {
       this.stationGroup.position.set(0, -0.78, 0);
