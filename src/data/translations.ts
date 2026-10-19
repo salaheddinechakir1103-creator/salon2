@@ -760,8 +760,8 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
       headlineHighlight: 'إشراقتكِ',
       headlineEnd: ' الطبيعية الأبهى.',
       subheading: 'التناغم المشرق بين أحدث صيحات تصفيف الشعر الراقية والطقوس النباتية المغربية الأصيلة. صالونات مغمورة بضوء النهار الطبيعي، مرايا مقوسة بالذهب، وعناية فائقة بخلاصات الأركان والنيرولي.',
-      ctaPrimary: 'حجز موعد استثنائي',
-      ctaSecondary: 'استكشاف باقات الخدمات',
+      ctaPrimary: 'حجزي موعدك',
+      ctaSecondary: 'شوفي الخدمات',
       stat1Title: '100% طبيعي',
       stat1Desc: 'أركان سوس النقي ونيرولي',
       stat2Title: '3 فروع فاخرة',
@@ -796,19 +796,19 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
       toggleHide: 'إخفاء لوحة التحكم',
     },
     services: {
-      kicker: '01. خدماتنا التوقيعية المتميزة',
-      title: 'طقوس الجمال الاستثنائية',
-      filterAll: 'جميع الطقوس',
+      kicker: '01. خدماتنا',
+      title: 'خدمات الجمال ديالنا',
+      filterAll: 'جميع الخدمات',
       filterCoiffure: 'تصفيف الشعر الراقي',
       filterVisage: 'العناية بالبشرة',
       filterOnglerie: 'العناية بالأظافر',
       filterHammam: 'الحمام الملكي الخاص',
       fromPrice: 'ابتداءً من',
-      bookRitual: 'حجز هذا الطقس',
+      bookRitual: 'حجزي هاد الخدمة',
     },
     transformation: {
-      kicker: 'التحول واللمعان الفائق',
-      title: 'غلاساج اللمعان الفائق وخصلات الشمس',
+      kicker: 'قبل وبعد',
+      title: 'شوفي الفرق فالشعر',
       desc: 'حركي المؤشر لمعاينة التحول الباهر لخصلات الشعر تحت أشعة الشمس. تركيبتنا الحصرية تغذي ألياف الشعر بالكيراتين النباتي وزيت الأركان العضوي لاقتناص الضوء بأعلى درجات الانعكاس.',
       metric1Label: 'معامل انعكاس اللمعان :',
       metric1Value: '+185% لمعان مِرآتي فائق',
@@ -823,11 +823,11 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     bridal: {
       kicker: 'باقة العروس الملكية الحصرية',
-      title: 'مراسم العروس المغربية الإمبراطورية',
+      title: 'إطلالة زوينة لنهار عرسك',
       desc: 'الأعراس المغربية احتفال بالوقار والأناقة. تخصص ميزون إكلا جناحاً ملكياً خاصاً بالكامل للعروس ومرافقتها، بإشراف كبار مصففي الشعر وخبراء التجميل المعتمدين.',
       floatingTag: 'مراسم الزفاف الملكية',
       floatingDesc: 'تحية إجلال لأناقة وجمال العروس المغربية الملكية.',
-      ctaQuote: 'طلب استشارة ومقايسة للعروس',
+      ctaQuote: 'طلبي ثمن باقة العروس',
       ctaWhatsapp: 'كونسيرج العروس عبر واتساب',
       features: [
         'جلسة تجريبية لتصفيف الشعر والمكياج قبل الزفاف بـ 15 يوماً',
@@ -840,7 +840,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     diagnostic: {
       kicker: 'استشارة تفاعلية رقمية',
-      title: 'تشخيص الجمال المصمم خصيصاً لكِ',
+      title: 'شنو الخدمة اللي تناسبك؟',
       desc: 'في 3 خطوات سريعة، يحدد خبراؤنا التركيبة والطقوس المثالية المتوافقة مع احتياجات شعركِ وبشرتكِ بدقة.',
       step1: '01. مجال العناية',
       step2: '02. النتيجة المنشودة',
@@ -849,7 +849,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
       step2Question: 'ما هو هدفكِ التجميلي الأساسي؟',
       step3Question: 'في أي فرع من صالوناتنا تفضلين استقبالكِ؟',
       back: '← الخطوة السابقة',
-      generate: 'توليد وصفتي التجميلية',
+      generate: 'شوفي الاقتراح',
       restart: 'إعادة التشخيص',
       prescriptionTag: 'الوصفة التجميلية المعتمدة',
       ingredientsTitle: 'التركيبة والمكونات الطبيعية النقية',
@@ -875,7 +875,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     gallery: {
       kicker: '03. معرض الصالون والأعمال',
-      title: 'معرض الصور الحصري',
+      title: 'شوفي خدمتنا بالصور',
       filterAll: 'الكل',
       filterCoiffure: 'تصفيف الشعر والبالياج',
       filterVisage: 'العناية بالبشرة',
@@ -925,7 +925,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     pricing: {
       kicker: '04. قائمة الأسعار والخدمات',
-      title: 'باقات الطقوس التجميلية',
+      title: 'الخدمات والأثمنة',
       desc: 'جميع الأسعار معلنة بالدرهم المغربي (MAD). تشمل كل جلسة تشخيصاً شخصياً مسبقاً أمام مِرآتكِ مع تقديم تشكيلة من الشاي المغربي العضوي.',
       filterAll: 'جميع الخدمات',
       filterCoiffure: 'تصفيف الشعر الراقي',
@@ -1020,7 +1020,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
       ],
     },
     booking: {
-      kicker: '05. الكونسيرج الخاص',
+      kicker: '05. المساعدة والحجز',
       title: 'حجز الموعد',
       desc: 'اختاري الصالون والموعد المناسب لكِ، وسيقوم فريق الكونسيرج بتأكيد موعدكِ بمنتهى الاحترافية والسرعة.',
       labelSalon: 'الصالون والفرع المطلوب',
@@ -1049,8 +1049,8 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
       btnNewSimulation: 'إجراء محاكاة حجز جديدة',
     },
     testimonials: {
-      kicker: '06. سجل الضيفات الوفيات',
-      title: 'شهادات وانطباعات راقية',
+      kicker: '06. آراء الزبونات',
+      title: 'شنو قالو على التجربة',
       demoNotice: '* مقتطفات استعراضية تجريبية — مصممة لأغراض العرض الفني للمحفظة الرقمية',
       items: [
         {
@@ -1153,7 +1153,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     modal: {
       title: 'حجز مقصورة وموعد',
-      subtitle: 'الكونسيرج الخاص',
+      subtitle: 'المساعدة والحجز',
       labelSalon: 'الصالون والفرع',
       labelRitual: 'الطقس المختار',
       labelDate: 'التاريخ',
@@ -1173,7 +1173,7 @@ export const TRANSLATIONS: Record<Language, TranslationSchema> = {
     },
     concierge: {
       onlineName: 'كنزة · متصلة الآن',
-      onlineStatus: 'كنزة · الكونسيرج الخاصة',
+      onlineStatus: 'كنزة · المساعدة والحجزة',
       salonSubtitle: 'ميزون إكلا · المثلث الذهبي الدار البيضاء',
       welcomeMsg: 'مرحباً بكِ في ميزون إكلا. أنا كنزة، الكونسيرج الرئيسية لصالوناتنا في المثلث الذهبي بالدار البيضاء. كيف يمكنني مساعدتكِ اليوم في اختيار طقسكِ التجميلي؟',
       quickInquiries: [
