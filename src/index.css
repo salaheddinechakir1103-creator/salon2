@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #FAF7F2;
+    --color-sand: #F3ECE2;
+    --color-alabaster: #FDFBF7;
+    --color-gold: #B89058;
+    --color-bronze: #8C6A3C;
+    --color-dark: #181416;
+    --color-charcoal: #2A2426;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF7F2;
+    color: #181416;
+    overflow-x: hidden;
+  }
+
+  [dir="rtl"] body,
+  [dir="rtl"] {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] .font-serif {
+    font-family: 'Amiri', 'Cairo', serif;
+  }
+}
+
+/* Luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C7B0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B89058;
+}
+
+/* Subtle luxury texture */
+.bg-travertine {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(rgba(184, 144, 88, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #8C6A3C 0%, #B89058 50%, #C9A772 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

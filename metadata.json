@@ -1,0 +1,6 @@
+{
+  "name": "Maison Éclat — Haute Beauté & Salon de Luxe",
+  "description": "Maison Éclat est un sanctuaire de haute beauté marocaine et de coiffure couture à Casablanca, Marrakech et Rabat. Expérience digitale immersive et rituels d'exception.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
