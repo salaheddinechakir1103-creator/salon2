@@ -1,3 +1,7 @@
+// Bundle local images through Vite to generate production-safe URLs.
+const bundledImages = import.meta.glob('/src/assets/images/*', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const resolveImage = (path: string): string => bundledImages[path] ?? path;
+
 export interface ServiceItem {
   id: string;
   category: 'coiffure' | 'visage' | 'onglerie' | 'maquillage' | 'hammam';
@@ -53,7 +57,7 @@ export const SALON_DATA = {
       duration: '90 - 150 min',
       priceMAD: 650,
       priceEUR: 60,
-      image: '/src/assets/images/luminous_bridal_hair_1792400243018.jpg',
+      image: resolveImage('/src/assets/images/luminous_bridal_hair_1792400243018.jpg'),
       features: [
         'Diagnostic trichologique haute précision',
         'Bain d’huiles précieuses chauffé à la vapeur',
@@ -71,7 +75,7 @@ export const SALON_DATA = {
       duration: '75 min',
       priceMAD: 850,
       priceEUR: 80,
-      image: '/src/assets/images/luminous_facial_treatment_1792400243593.jpg',
+      image: resolveImage('/src/assets/images/luminous_facial_treatment_1792400243593.jpg'),
       features: [
         'Double nettoyage aux hydrolats botaniques',
         'Exfoliation douce aux enzymes de grenade',
@@ -89,7 +93,7 @@ export const SALON_DATA = {
       duration: '60 min',
       priceMAD: 450,
       priceEUR: 42,
-      image: '/src/assets/images/luminous_manicure_luxury_1792400243470.jpg',
+      image: resolveImage('/src/assets/images/luminous_manicure_luxury_1792400243470.jpg'),
       features: [
         'Bain de roses et d’argan tiède',
         'Soin des cuticules à la cire d’abeille naturelle',
@@ -106,7 +110,7 @@ export const SALON_DATA = {
       duration: '90 min',
       priceMAD: 950,
       priceEUR: 90,
-      image: '/src/assets/images/salon_hammam_ritual_1792364726835.jpg',
+      image: resolveImage('/src/assets/images/salon_hammam_ritual_1792364726835.jpg'),
       features: [
         'Suite de hammam 100% privative',
         'Savon noir artisanal aux huiles essentielles',
@@ -124,7 +128,7 @@ export const SALON_DATA = {
       duration: '4h30 (Jour J ou veille)',
       priceMAD: 3500,
       priceEUR: 330,
-      image: '/src/assets/images/salon_bridal_couture_1792365278992.jpg',
+      image: resolveImage('/src/assets/images/salon_bridal_couture_1792365278992.jpg'),
       features: [
         'Hammam royal privatisé avec bain de roses et lait d’amande',
         'Soin éclat visage à la figue de barbarie & kobido liftant',
@@ -225,7 +229,7 @@ export const SALON_DATA = {
       id: 'gal-1',
       title: 'Le Salon Principal Baigné de Soleil',
       category: 'coiffure' as const,
-      image: '/src/assets/images/luminous_salon_station_1792400241745.jpg',
+      image: resolveImage('/src/assets/images/luminous_salon_station_1792400241745.jpg'),
       aspect: '4:3' as const,
       caption: 'Miroirs en arche d’or et marbre blanc sous la lumière naturelle de Casablanca.',
     },
@@ -233,7 +237,7 @@ export const SALON_DATA = {
       id: 'gal-2',
       title: 'Coiffure de Mariée en Salon Privatif',
       category: 'coiffure' as const,
-      image: '/src/assets/images/luminous_bridal_hair_1792400243018.jpg',
+      image: resolveImage('/src/assets/images/luminous_bridal_hair_1792400243018.jpg'),
       aspect: '4:3' as const,
       caption: 'Travail expert de boucles soyeuses et préparation nuptiale.',
     },
@@ -241,7 +245,7 @@ export const SALON_DATA = {
       id: 'gal-3',
       title: 'Soin Kobido & Drainage Visage',
       category: 'visage' as const,
-      image: '/src/assets/images/luminous_facial_treatment_1792400243593.jpg',
+      image: resolveImage('/src/assets/images/luminous_facial_treatment_1792400243593.jpg'),
       aspect: '4:3' as const,
       caption: 'Élixir de figue de barbarie et néroli sur socle de travertin.',
     },
@@ -249,7 +253,7 @@ export const SALON_DATA = {
       id: 'gal-4',
       title: 'Haute Manucure & Liseré Doré',
       category: 'onglerie' as const,
-      image: '/src/assets/images/luminous_manicure_luxury_1792400243470.jpg',
+      image: resolveImage('/src/assets/images/luminous_manicure_luxury_1792400243470.jpg'),
       aspect: '4:3' as const,
       caption: 'Liseré feuille d’or sur lin brut et pierre naturelle.',
     },
@@ -257,7 +261,7 @@ export const SALON_DATA = {
       id: 'gal-5',
       title: 'Sanctuaire de Hammam en Tadelakt',
       category: 'hammam' as const,
-      image: '/src/assets/images/salon_hammam_ritual_1792364726835.jpg',
+      image: resolveImage('/src/assets/images/salon_hammam_ritual_1792364726835.jpg'),
       aspect: '3:4' as const,
       caption: 'Bassin d’eau chaude, vapeur parfumée et ambre.',
     },
@@ -265,7 +269,7 @@ export const SALON_DATA = {
       id: 'gal-6',
       title: 'Cérémonie Nuptiale Haute Couture',
       category: 'coiffure' as const,
-      image: '/src/assets/images/salon_bridal_couture_1792365278992.jpg',
+      image: resolveImage('/src/assets/images/salon_bridal_couture_1792365278992.jpg'),
       aspect: '4:3' as const,
       caption: 'Parure royale et coiffure de mariée d’exception.',
     },
